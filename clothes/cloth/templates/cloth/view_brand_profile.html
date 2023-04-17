@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/header-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/view-brand-profile.css'%}">
+    <title>Просмотр профиля бренда</title>
+</head>
+{% include 'inc/_header.html'%}
+<body>
+    <div class="brand-info">
+        <div class="brand-name">
+            <p>PZH Wear<br><span class="brand-description">Бренд с дизайнерской одеждой</span></p>
+        </div>
+        <div class="favorite">
+            <button type="button"><i class="fas fa-tags"></i></button>
+        </div>
+    </div>
+    <div class="brand-menu">
+        <a href="" class="brand-menu active">Коллекции</a>
+        <a href="" class="brand-menu">Вся одежда</a>
+    </div>
+    <div class="collection">
+        <div class="collection-description">
+            <p class="collection-name"> Чё то блять Спорт драконы хуй его</p>
+            <p>Спортивный костюмы китай блять япония драг слеер ещё чёто было</p>
+        </div>
+        <div class="collection-img">
+            <img src="{%static 'RDM-main/assets/img/view-brand-profile/view-brand-profile-collection-img.png'%}" alt="">
+        </div>
+    </div>
+</body>
+{% include 'inc/_footer.html'%}
+</html>

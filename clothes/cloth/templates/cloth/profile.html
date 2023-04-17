@@ -1,0 +1,174 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/header-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/footer-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/profile.css'%}">
+    <title>Профиль</title>
+</head>
+{% include 'inc/_header.html'%}
+<body>
+    <div class="user-card-and-payment">
+        <div class="user-card">
+            <div class="user-card-photo">
+                <img src="{%static 'RDM-main/assets/img/collection-img2.png'%}" alt="user-photo">
+            </div>
+            <div class="user-card-info">
+                <div class="user-card-name">
+                    <p>Павел Топский</p>
+                </div>
+                <div class="user-card-delivery-adress">
+                    <p>ул. Дыбенко 15</p>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <button><i class="fas fa-money-check"></i></button>
+        </div>
+    </div>
+    <div class="profile-info">
+        <div class="left-content">
+            <div class="favorite-goods">
+                <p>Избранные товары</p>
+                <p class="favorite-goods-favorite-counter">За всё время вам понравилось<br> 3 475 товаров</p>
+                <div class="holes-goods">
+                    <div class="hole-goods"></div>
+                    <div class="hole-goods"></div>
+                </div>
+            </div>
+            <div class="favorite-brands">
+                <p>Любимые бренды</p>
+                <p class="favorite-goods-favorite-counter">Отмечено 47 брендов</p>
+                <div class="holes-brands">
+                    <div class="hole-brands"></div>
+                    <div class="hole-brands"></div>
+                </div>
+            </div>
+            <div class="promocode">
+                <p>Введите промокод</p>
+                <input type="text" name="text" id="bonus-counter-input" placeholder="Промокод">
+                <button id="activate-promocode">Активировать</button>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="your-saved-appearance">
+                <p>Ваши сохранённые образы</p>
+                <div class="your-saved-appearance-description">
+                    <p>Лучшие комбинации цветов<br>Модные образы<br>Будущий гардероб</p>
+                </div>
+                <div class="your-saved-appearance-icon">
+                    <i class="fas fa-person-booth"></i>
+                </div>
+                <div class="holes-appearance">
+                    <div class="hole-appearance"></div>
+                    <div class="hole-appearance"></div>
+                </div>
+            </div>
+            <div class="bonus-counter">
+                <p class="bonus-counter-title">У вас 157 бонусов</p>
+                <p class="bonus-counter-description">Вы знаете, что с ними делать!</p>
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <div class="product">
+            <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+            <div class="product__favorite">
+                <button type="button"><i class="fas fa-tag"></i></button>
+            </div>
+            <div class="product__sale-and-price">
+                <p class="product__price">2560 p</p>
+            </div>
+                <p class="product__name">Футболка оверсайз</p>
+                <p class="product__brand">LevishStyle</p>
+        </div>
+        <div class="product">
+            <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+            <div class="product__favorite">
+                <button type="button"><i class="fas fa-tag"></i></button>
+            </div>
+            <div class="product__sale-and-price">
+                <p class="product__price">2560 p</p>
+            </div>
+                <p class="product__name">Футболка оверсайз</p>
+                <p class="product__brand">LevishStyle</p>
+        </div>
+        <div class="product">
+            <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+            <div class="product__favorite">
+                <button type="button"><i class="fas fa-tag"></i></button>
+            </div>
+            <div class="product__sale-and-price">
+                <p class="product__price">2560 p</p>
+            </div>
+                <p class="product__name">Футболка оверсайз</p>
+                <p class="product__brand">LevishStyle</p>
+        </div>
+        <div class="product">
+            <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+            <div class="product__favorite">
+                <button type="button"><i class="fas fa-tag"></i></button>
+            </div>
+            <div class="product__sale-and-price">
+                <p class="product__price">2560 p</p>
+            </div>
+                <p class="product__name">Футболка оверсайз</p>
+                <p class="product__brand">LevishStyle</p>
+        </div>
+        <div class="product">
+            <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+            <div class="product__favorite">
+                <button type="button"><i class="fas fa-tag"></i></button>
+            </div>
+            <div class="product__sale-and-price">
+                <p class="product__price">2560 p</p>
+            </div>
+                <p class="product__name">Футболка оверсайз</p>
+                <p class="product__brand">LevishStyle</p>
+        </div>
+        <div class="product">
+            <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+            <div class="product__favorite">
+                <button type="button"><i class="fas fa-tag"></i></button>
+            </div>
+            <div class="product__sale-and-price">
+                <p class="product__price">2560 p</p>
+            </div>
+                <p class="product__name">Футболка оверсайз</p>
+                <p class="product__brand">LevishStyle</p>
+        </div>
+        <div class="product">
+            <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+            <div class="product__favorite">
+                <button type="button"><i class="fas fa-tag"></i></button>
+            </div>
+            <div class="product__sale-and-price">
+                <p class="product__price">2560 p</p>
+            </div>
+                <p class="product__name">Футболка оверсайз</p>
+                <p class="product__brand">LevishStyle</p>
+        </div>
+        <div class="product">
+            <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+            <div class="product__favorite">
+                <button type="button"><i class="fas fa-tag"></i></button>
+            </div>
+            <div class="product__sale-and-price">
+                <p class="product__price">2560 p</p>
+            </div>
+                <p class="product__name">Футболка оверсайз</p>
+                <p class="product__brand">LevishStyle</p>
+        </div>
+    </div>
+   {% include 'inc/_footer.html'%}
+</body>
+</html>

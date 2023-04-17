@@ -1,0 +1,80 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/header-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/collections.css'%}">
+    <title>Коллекции</title>
+</head>
+{% include 'inc/_header.html'%}
+<body>
+    <button type="button">Фильтры
+        <div class="filters-content">
+            <p class="filters-list-title">Стиль</p>
+            <ul class="filters-list">
+                <li class="filters-list__item"><a href="/index.html">Домашний</a></li>
+                <li class="filters-list__item"><a href="#">Уличный</a></li>
+                <li class="filters-list__item"><a href="#">Спортивный</a></li>
+                <li class="filters-list__item"><a href="#">Деловой</a></li>
+                <li class="filters-list__item"><a href="#">Праздничный</a></li>
+            </ul>
+            <p class="filters-list-title">Тип</p>
+            <ul class="filters-list">
+                <li class="filters-list__item"><a href="/index.html">Опасный</a></li>
+                <li class="filters-list__item"><a href="#">Футболка</a></li>
+                <li class="filters-list__item"><a href="#">Комбинезон</a></li>
+                <li class="filters-list__item"><a href="#">Дублёнка</a></li>
+                <li class="filters-list__item"><a href="#">Пончо</a></li>
+                <li class="filters-list__item"><a href="#">Маскхалат</a></li>
+                <li class="filters-list__item"><a href="#">Рашгард</a></li>
+                <li class="filters-list__item"><a href="#">Шорты</a></li>
+                <li class="filters-list__item"><a href="#">Тайтсы</a></li>
+                <li class="filters-list__item"><a href="#">Пилотка</a></li>
+                <li class="filters-list__item"><a href="#">...</a></li>
+            </ul>
+            <p class="filters-list-title">Пол</p>
+            <ul class="filters-list">
+                <li class="filters-list__item"><a href="/index.html">Мужской</a></li>
+                <li class="filters-list__item"><a href="#">Женский</a></li>
+            </ul>
+        </div>
+        </button>
+        <main class="main">
+            <div class="collections">
+                <div class="collection">
+                    <div class="collection-title">
+                        <h1>Коллекция</h1>
+                        <div class="collection-title__name"><p>Название бренда</p></div>
+                    </div>
+                    <div class="collection-content">
+                        <a href="#"><img src="{%static 'RDM-main/assets/img/collection-img1.png'%}" alt="product-photo" class="collection-content__img"></a>
+                        <a href="#"><img src="{%static 'RDM-main/assets/img/collection-img2.png'%}" alt="product-photo" class="collection-content__img"></a>
+                    </div>
+                </div>
+                <div class="collection">
+                    <div class="collection-title">
+                        <h1>Коллекция</h1>
+                        <div class="collection-title__name"><p>Название бренда</p></div>
+                    </div>
+                    <div class="collection-content">
+                        <a href="#"><img src="{%static 'RDM-main/assets/img/collection2-photo.png'%}" alt="product-photo" class="collection-content__img"></a>
+                        <a href="#"><img src="{%static 'RDM-main/assets/img/collection2-photo.png'%}" alt="product-photo" class="collection-content__img"></a>
+                        <a href="#"><img src="{%static 'RDM-main/assets/img/collection2-photo.png'%}" alt="product-photo" class="collection-content__img"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include 'inc/_footer.html'%}
+</body>
+</html>

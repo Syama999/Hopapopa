@@ -14,63 +14,30 @@
     <link rel="stylesheet" href="{%static 'RDM-main/assets/css/brand-collection.css'%}">
     <title>Подборка брендов</title>
 </head>
-<header class="header">
-    <div class="header-menu">
-        <button type="button"><i class="fas fa-bars"></i>
-            <div class="header-main-menu">
-                <i class="fas fa-bars"></i>
-                <ul class="header-main-menu-list">
-                    <li class="header-main-menu__item"></li> <!-- li for line -->
-                    <li class="header-main-menu__item"><a href="">Бренды</a></li>
-                    <li class="header-main-menu__item"><a href="">Новинки</a></li>
-                    <li class="header-main-menu__item"><a href="">Лучшее</a></li>
-                    <li class="header-main-menu__item"><a href="/sale.html">Скидки</a></li>
-                </ul>
-            </div>
-        </button>
-    </div>
-    <div class="header-logo"><h1><a href="/index.html">РОСГОСШЛЁПКИ</a></h1></div>
-    <nav class="header-nav">
-        <ul class="header-nav-list">
-            <li class="header-nav-list__item header-nav__item-search"><a href="#"><input type="search" name="header-search" id="header-search" placeholder="Поиск"></a></li>
-            <li class="header-nav-list__item header-nav__item-login"><a href="#"><i class="fas fa-user"></i></a></li>
-            <li class="header-nav-list__item header-nav__item-shopping-cart"><a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a></i></li>
-        </ul>
-    </nav>
-</header>
+{% include 'inc/_header.html'%}
 <body>
     <main class="main">
         <div class="brands-collection">
             <div class="big-brands">
                 <div class="big-brand">
-                    <a href="#"><img src="/assets/img/brands-collecton/brand-big-photo.png" alt=""></a>
+                    <a href="#"><img src="{%static 'RDM-main/assets/img/brands-collecton/brand-big-photo.png'%}" alt=""></a>
                     <div class="small-photos">
-                        <a href="#"><img src="/assets/img/brands-collecton/brand-big-photo-3.png" alt=""></a>
-                        <a href="#"><img src="/assets/img/brands-collecton/brand-big-photo-2.png" alt=""></a>
+                        <a href="#"><img src="{%static 'RDM-main/assets/img/brands-collecton/brand-big-photo-3.png'%}" alt=""></a>
+                        <a href="#"><img src="{%static 'RDM-main/assets/img/brands-collecton/brand-big-photo-2.png'%}" alt=""></a>
                     </div>
                 </div>
                 <div class="big-brand-2">
-                    <a href="#"><img src="/assets/img/brands-collecton/brand-big-photo-4.png" alt=""></a>
+                    <a href="#"><img src="{%static 'RDM-main/assets/img/brands-collecton/brand-big-photo-4.png'%}" alt=""></a>
                 </div>
             </div>
             <div class="small-brands">
-                <div class="small-brand"><a href="#"><img src="/assets/img/brands-collecton/small-brand-photo-1.png" alt="small-brand-photo"></a></div>
-                <div class="small-brand"><a href="#"><img src="/assets/img/brands-collecton/small-brand-photo-2.png" alt="small-brand-photo"></a></div>
-                <div class="small-brand"><a href="#"><img src="/assets/img/brands-collecton/small-brand-photo-3.png" alt="small-brand-photo"></a></div>
-                <div class="small-brand"><a href="#"><img src="/assets/img/brands-collecton/small-brand-photo-4.png" alt="small-brand-photo"></a></div>
+                <div class="small-brand"><a href="#"><img src="{%static 'RDM-main/assets/img/brands-collecton/small-brand-photo-1.png'%}" alt="small-brand-photo"></a></div>
+                <div class="small-brand"><a href="#"><img src="{%static 'RDM-main/assets/img/brands-collecton/small-brand-photo-2.png'%}" alt="small-brand-photo"></a></div>
+                <div class="small-brand"><a href="#"><img src="{%static 'RDM-main/assets/img/brands-collecton/small-brand-photo-3.png'%}" alt="small-brand-photo"></a></div>
+                <div class="small-brand"><a href="#"><img src="{%static 'RDM-main/assets/img/brands-collecton/small-brand-photo-4.png'%}" alt="small-brand-photo"></a></div>
             </div>
         </div>
     </main>
 </body>
-<footer class="footer">
-    <nav class="footer-nav">
-        <ul class="footer-nav-list">
-            <li class="footer-nav-list__item"><a href="#">О нас</a></li>
-            <li class="footer-nav-list__item"><a href="#">Пользовательское соглашение</a></li>
-            <li class="footer-nav-list__item"><a href="#">Разместить бренд на сайт</a></li>
-            <li class="footer-nav-list__item"><a href="#">Поддержка</a></li>
-        </ul>
-    </nav>
-    <h2 class="footer-left-text">Мода<br>России</h2>
-</footer>
+{% include 'inc/_footer.html'%}
 </html>

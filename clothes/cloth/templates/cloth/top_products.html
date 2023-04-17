@@ -1,0 +1,146 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/header-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/footer-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/top-products.css'%}">
+    <title>Лучшее</title>
+</head>
+{% include 'inc/_header.html'%}
+<body>
+    <div class="container">
+        <div class="top-products__slider-content">
+            <div class="slider-line">
+                <button id="arrow__slide-left" onclick="leftSlide()"></button>
+                <div class="slider__item">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/top-products/slider__item-img.png'%}" alt="" class="slider__img"></a>
+                </div>
+                <div class="slider__item">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/top-products/slider__item-img.png'
+%}" alt="" class="slider__img"></a>
+                </div>
+                <div class="slider__item">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/top-products/slider__item-img.png'%}" alt="" class="slider__img"></a>
+                </div>
+                <div class="unactive-imgs">
+                    <div class="slider__item unactive">
+                        <a href=""><img src="{%static 'RDM-main/assets/img/top-products/slider__item-img.png'%}" alt="" class="slider__img"></a>
+                    </div>
+                    <div class="slider__item unactive">
+                        <a href=""><img src="{%static 'RDM-main/assets/img/top-products/slider__item-img.png'%}" alt="" class="slider__img"></a>
+                    </div>
+                    <div class="slider__item unactive">
+                        <a href=""><img src="{%static 'RDM-main/assets/img/top-products/slider__item-img.png'%}" alt="" class="slider__img"></a>
+                    </div>
+                    <div class="slider__item unactive">
+                        <a href=""><img src="{%static 'RDM-main/assets/img/top-products/slider__item-img.png'%}" alt="" class="slider__img"></a>
+                    </div>
+                </div>
+                <button id="arrow__slide-right" onclick="rightSlide()"></button>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+                <div class="product">
+                    <a href=""><img src="{%static 'RDM-main/assets/img/profile/profile-product-img.png'%}" alt="product-photo"></a>
+                    <div class="product__favorite">
+                        <button type="button"><i class="fas fa-tag"></i></button>
+                    </div>
+                    <div class="product__sale-and-price">
+                        <p class="product__price">2560 p</p>
+                    </div>
+                        <p class="product__name">Футболка оверсайз</p>
+                        <p class="product__brand">LevishStyle</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{%static 'RDM-main/assets/js/topProductsSlider.js'%}"></script>
+</body>
+{% include 'inc/_footer.html'%}
+</html>

@@ -1,0 +1,24 @@
+<header class="header">
+            <div class="header-menu">
+                <button type="button"><i class="fas fa-bars"></i>
+                    <div class="header-main-menu">
+                        <i class="fas fa-bars"></i>
+                        <ul class="header-main-menu-list">
+                            <li class="header-main-menu__item"></li> <!-- li for line -->
+                            <li class="header-main-menu__item"><a href="{% url 'brand_collection'%}">Бренды</a></li>
+                            <li class="header-main-menu__item"><a href="{% url 'new_products'%}">Новинки</a></li>
+                            <li class="header-main-menu__item"><a href="{% url 'favourite'%}">Лучшее</a></li>
+                            <li class="header-main-menu__item"><a href="{% url 'sale'%}">Скидки</a></li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+            <div class="header-logo"><h1><a href="{% url 'home'%}">РОСГОСШЛЁПКИ</a></h1></div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list__item header-nav__item-search"><a href="#"><input type="search" name="header-search" id="header-search" placeholder="Поиск"></a></li>
+                    <li class="header-nav-list__item header-nav__item-login"><a href="{% url 'profile'%}"><i class="fas fa-user"></i></a></li>
+                    <li class="header-nav-list__item header-nav__item-shopping-cart"><a href="{% url 'shoppingcart'%}"><i class="fas fa-shopping-cart"></i></a></i></li>
+                </ul>
+            </nav>
+        </header>

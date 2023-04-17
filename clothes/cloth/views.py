@@ -34,3 +34,59 @@ class Sale(ListView):
     model = Cloth
     context_object_name = 'sale'
     template_name = 'cloth/sale.html'
+
+class ShoppingCart(ListView):
+    model = Cloth
+    context_object_name = 'shoppingcart'
+    template_name = 'cloth/shoppingcart.html'
+
+class Profile(ListView):
+    model = Cloth #надо будет точно исправлять
+    context_object_name = 'profile'
+    template_name = 'cloth/profile.html'
+
+class BrandProfile(ListView):
+    model = Cloth #надо будет точно исправлять
+    context_object_name = 'brand_profile'
+    template_name = 'cloth/brand_profile.html'
+
+class Collections(ListView):
+    model = Cloth #надо будет точно исправлять
+    context_object_name = 'collections'
+    template_name = 'cloth/collections.html'
+
+class DeliveryAdress(ListView):
+    model = Cloth
+    context_object_name = 'delivery_adress'
+    template_name = 'cloth/delivery_adress.html'
+
+class NewLook(ListView):
+    model = Cloth
+    context_object_name = 'new_look'
+    template_name = 'cloth/new_look.html'
+
+
+class ProductCard(ListView):
+    model = Cloth
+    context_object_name = 'product_card'
+    template_name = 'cloth/product_card.html'
+
+
+class Search(ListView):
+    model = Cloth
+    context_object_name = 'search'
+    template_name = 'cloth/search.html'
+
+
+class TopProducts(ListView):
+    model = Cloth
+    context_object_name = 'top_products'
+    template_name = 'cloth/top_products.html'
+
+
+class ViewBrandProfile(ListView):
+    model = Cloth
+    context_object_name = 'view_brand_profile'
+    template_name = 'cloth/view_brand_profile.html'
+
+

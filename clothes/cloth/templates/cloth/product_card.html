@@ -1,0 +1,65 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/header-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/footer-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/product-card.css'%}">
+    <title>Товар</title>
+</head>
+{% include 'inc/_header.html'%}
+<body>
+    <div class="container">
+        <div class="product__photo">
+            <img src="{%static 'RDM-main/assets/img/product-card/product-card__photo.png'%}" alt="product photo">
+        </div>
+        <div class="product-content">
+            <div class="product-text">
+                <p class="product__title">
+                    Куртец Космос <i class="fas fa-tags"></i><br>(Чёрно-Розовый)
+                </p>
+                <p class="product__descr">
+                    Шерстянная зимняя куртка на молнии<br>С индивидуальным дизайном<br>В комплекте шерстяной капюшон
+                </p>
+            </div>
+            <div class="product-color">
+                <div class="select-color-group one-group">
+                    <div class="item1"></div>
+                    <div class="item2"></div>
+                    <div class="item3"></div>
+                </div>
+                <p class="product-color__title">Цвет</p>
+                <div class="select-color-group two-group">
+                    <div class="item1"></div>
+                    <div class="item2"></div>
+                    <div class="item3"></div>
+                </div>
+            </div>
+            <div class="product-size">
+                    <button class="product-size__item">XS</button>
+                    <button class="product-size__item">S</button>
+                    <button class="product-size__item">M</button>
+                    <button class="product-size__item">L</button>
+                    <button class="product-size__item">XL</button>
+                </div>
+                <div class="product-price">
+                    <div class="product__sale-price">
+                        <p class="sale-price">5 430P</p>
+                        <p class="price">5 030P</p>
+                    </div>
+                </div>
+                <div class="buy-button"><a href="/delivery-adress.html"><button>В корзину</button></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

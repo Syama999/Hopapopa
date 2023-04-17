@@ -16,38 +16,15 @@
     <link rel="stylesheet" href="{%static 'RDM-main/assets/css/new-products.css'%}">
     <title>Новинки</title>
 </head>
-<header class="header">
-    <div class="header-menu">
-        <button type="button"><i class="fas fa-bars"></i>
-            <div class="header-main-menu">
-                <i class="fas fa-bars"></i>
-                <ul class="header-main-menu-list">
-                    <li class="header-main-menu__item"></li> <!-- li for line -->
-                    <li class="header-main-menu__item"><a href="">Бренды</a></li>
-                    <li class="header-main-menu__item"><a href="">Новинки</a></li>
-                    <li class="header-main-menu__item"><a href="">Лучшее</a></li>
-                    <li class="header-main-menu__item"><a href="/sale.html">Скидки</a></li>
-                </ul>
-            </div>
-        </button>
-    </div>
-    <div class="header-logo"><h1><a href="/index.html">РОСГОСШЛЁПКИ</a></h1></div>
-    <nav class="header-nav">
-        <ul class="header-nav-list">
-            <li class="header-nav-list__item header-nav__item-search"><a href="#"><input type="search" name="header-search" id="header-search" placeholder="Поиск"></a></li>
-            <li class="header-nav-list__item header-nav__item-login"><a href="/profile.html"><i class="fas fa-user"></i></a></li>
-            <li class="header-nav-list__item header-nav__item-shopping-cart"><a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a></i></li>
-        </ul>
-    </nav>
-</header>
+{% include 'inc/_header.html'%}
 <body>
     <div class="container">
         <div class="new__items">
             <div class="new__item">
                 <p class="item__title">Новинки весна - лето</p>
                 <div class="item__photo">
-                   <a href=""> <img src="assets/img/new-products/new-product__item-photo.png" alt=""></a>
-                   <a href=""><img src="assets/img/new-products/new-product__item-photo.png" alt=""></a>
+                   <a href=""> <img src="{%static 'RDM-main/assets/img/new-products/new-product__item-photo.png'%}" alt=""></a>
+                   <a href=""><img src="{%static 'RDM-main/assets/img/new-products/new-product__item-photo.png'%}" alt=""></a>
                 </div>
                 <div class="item__collection-name">
                     <p class="collection-name">Коллекция Прада</p>
@@ -57,8 +34,8 @@
             <div class="new__item">
                 <p class="item__title">Новинки весна - лето</p>
                 <div class="item__photo">
-                   <a href=""> <img src="assets/img/new-products/new-product__item-photo.png" alt=""></a>
-                   <a href=""><img src="assets/img/new-products/new-product__item-photo.png" alt=""></a>
+                   <a href=""> <img src="{%static 'RDM-main/assets/img/new-products/new-product__item-photo.png'%}" alt=""></a>
+                   <a href=""><img src="{%static 'RDM-main/assets/img/new-products/new-product__item-photo.png'%}" alt=""></a>
                 </div>
                 <div class="item__collection-name">
                     <p class="collection-name">Коллекция Прада</p>
@@ -73,7 +50,7 @@
                 <button><i class="fas fa-tag"></i></button>
             </div>
             <div class="sale__item-photo">
-                <a href=""><img src="/assets/img/sale-product-card-img.png" alt="sale-product"></a>
+                <a href=""><img src="{%static 'RDM-main/assets/img/sale-product-card-img.png'%}" alt="sale-product"></a>
             </div>
             <div class="sale__item-price">
                 <p>2560 Р</p>
@@ -88,7 +65,7 @@
                 <button><i class="fas fa-tag"></i></button>
             </div>
             <div class="sale__item-photo">
-                <a href=""><img src="/assets/img/sale-product-card-img.png" alt="sale-product"></a>
+                <a href=""><img src="{%static 'RDM-main/assets/img/sale-product-card-img.png'%}" alt="sale-product"></a>
             </div>
             <div class="sale__item-price">
                 <p>2560 Р</p>
@@ -103,7 +80,7 @@
                 <button><i class="fas fa-tag"></i></button>
             </div>
             <div class="sale__item-photo">
-                <a href=""><img src="/assets/img/sale-product-card-img.png" alt="sale-product"></a>
+                <a href=""><img src="{%static 'RDM-main/assets/img/sale-product-card-img.png'%}" alt="sale-product"></a>
             </div>
             <div class="sale__item-price">
                 <p>2560 Р</p>
@@ -118,7 +95,7 @@
                 <button><i class="fas fa-tag"></i></button>
             </div>
             <div class="sale__item-photo">
-                <a href=""><img src="/assets/img/sale-product-card-img.png" alt="sale-product"></a>
+                <a href=""><img src="{%static 'RDM-main/assets/img/sale-product-card-img.png'%}" alt="sale-product"></a>
             </div>
             <div class="sale__item-price">
                 <p>2560 Р</p>
@@ -130,15 +107,5 @@
         </div>
     </div>
 </body>
-<footer class="footer">
-    <nav class="footer-nav">
-        <ul class="footer-nav-list">
-            <li class="footer-nav-list__item"><a href="#">О нас</a></li>
-            <li class="footer-nav-list__item"><a href="#">Пользовательское соглашение</a></li>
-            <li class="footer-nav-list__item"><a href="#">Разместить бренд на сайт</a></li>
-            <li class="footer-nav-list__item"><a href="#">Поддержка</a></li>
-        </ul>
-    </nav>
-    <h2 class="footer-left-text">Мода<br>России</h2>
-</footer>
+{% include 'inc/_footer.html'%}
 </html>

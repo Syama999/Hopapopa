@@ -1,0 +1,49 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/header-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/footer-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/new-look.css'%}">
+    <title>Новый взгляд</title>
+</head>
+{% include 'inc/_header.html'%}
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="item__photo">
+                <a href=""><img src="{%static 'RDM-main/assets/img/new-look/item__photo-img.png'%}" alt="photo"></a>
+                <a href=""><img src="{%static 'RDM-main/assets/img/new-look/item__photo-img2.png'%}" alt="photo"></a>
+                <a href=""><img src="{%static 'RDM-main/assets/img/new-look/item__photo-img3.png'%}" alt="photo"></a>
+            </div>
+            <div class="item__name">
+                <p class="item__name-title">Cоздай свой первый свитер</p>
+                <div class="red-line"></div>
+                <p class="item__name-brand">torch</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__photo">
+                <a href=""><img src="{%static 'RDM-main/assets/img/new-look/item__photo-img.png'%}" alt="photo"></a>
+                <a href=""><img src="{%static 'RDM-main/assets/img/new-look/item__photo-img2.png'%}" alt="photo"></a>
+                <a href=""><img src="{%static 'RDM-main/assets/img/new-look/item__photo-img3.png'%}" alt="photo"></a>
+            </div>
+            <div class="item__name">
+                <p class="item__name-title">Cоздай свой первый свитер</p>
+                <div class="red-line"></div>
+                <p class="item__name-brand">torch</p>
+            </div>
+        </div>
+    </div>
+</body>
+{% include 'inc/_footer.html'%}
+</html>

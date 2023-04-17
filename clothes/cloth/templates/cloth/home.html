@@ -19,30 +19,7 @@
     <title>Главная</title>
 </head>
     <div class="content">
-        <header class="header">
-            <div class="header-menu">
-                <button type="button"><i class="fas fa-bars"></i>
-                    <div class="header-main-menu">
-                        <i class="fas fa-bars"></i>
-                        <ul class="header-main-menu-list">
-                            <li class="header-main-menu__item"></li> <!-- li for line -->
-                            <li class="header-main-menu__item"><a href="{% url 'brand_collection'%}">Бренды</a></li>
-                            <li class="header-main-menu__item"><a href="{% url 'new_products'%}">Новинки</a></li>
-                            <li class="header-main-menu__item"><a href="{% url 'favourite'%}">Лучшее</a></li>
-                            <li class="header-main-menu__item"><a href="{% url 'sale'%}">Скидки</a></li>
-                        </ul>
-                    </div>
-                </button>
-            </div>
-            <div class="header-logo"><h1><a href="/index.html">РОСГОСШЛЁПКИ</a></h1></div>
-            <nav class="header-nav">
-                <ul class="header-nav-list">
-                    <li class="header-nav-list__item header-nav__item-search"><a href="#"><input type="search" name="header-search" id="header-search" placeholder="Поиск"></a></li>
-                    <li class="header-nav-list__item header-nav__item-login"><a href="/profile.html"><i class="fas fa-user"></i></a></li>
-                    <li class="header-nav-list__item header-nav__item-shopping-cart"><a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a></i></li>
-                </ul>
-            </nav>
-        </header>
+        {% include 'inc/_header.html'%}
         <body class="body">
             <button class="filters-button" type="button">Фильтры
                 <div class="filters-content">
@@ -81,28 +58,27 @@
             <main class="main">
                 <div class="slider-line">
                     <div class="main-slide">
-                        <div class="main-content">
                             <div class="main-collection__arrow-slider-left">
-                                <button class="main-slider-left" type="button" onclick="myFunction()"><img src="assets/img/index/arrow-slider.png" alt="arrow-left"></button>
+                                <button class="main-slider-left" type="button" onclick="myFunction()"><img src="{%static 'RDM-main/assets/img/index/arrow-slider.png'%}" alt="arrow-left"></button>
                             </div>
                             <div class="main-collection">
                                 <h1 class="main-collection__title">Коллекция</h1>
                                 <p class="main-collection__brand-name">Название и бренд</p>
                                 <div class="main-collection-slider-line">
-                                    <img src="/tests/img/main-collection-img.webp" alt="">
-                                    <img src="/tests/img/main-collection-img.webp" alt="">
-                                    <img src="/tests/img/main-collection-img.webp" alt="">
+                                    <img src="{%static 'RDM-main/tests/img/main-collection-img.webp'%}" alt="">
+                                    <img src="{%static 'RDM-main/tests/img/main-collection-img.webp'%}" alt="">
+                                    <img src="{%static 'RDM-main/tests/img/main-collection-img.webp'%}" alt="">
                             </div>
                             </div>
                             <div class="main-collection__arrow-slider-right">
-                                <button class="main-slider-right" type="button"><img src="assets/img/index/arrow-slider.png" alt="arrow-left"></button>
+                                <button class="main-slider-right" type="button"><img src="{%static 'RDM-main/assets/img/index/arrow-slider.png'%}" alt="arrow-left"></button>
                             </div>
                             <div class="main-sale">
-                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="assets/img/index/main-sale-img.webp" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/main-sale-img.webp'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/main-sale-img.webp'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/main-sale-img.webp'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/main-sale-img.webp'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/main-sale-img.webp'%}" alt="" class="main-sale-img"></a>
                                 <h1 class="main-sale-title">Распродажа</h1>
                                 <p class="main-sale-month">Январь</p>
                             </div>
@@ -110,18 +86,18 @@
                         <div class="additional-content">
                             <div class="new-look">
                                 <h1 class="new-look-title">Новый взгляд</h1>
-                                <a href="/new-look.html"><img src="assets/img/index/new-look-preview-page.png" alt=""></a>
+                                <a href="/new-look.html"><img src="{%static 'RDM-main/assets/img/index/new-look-preview-page.png'%}" alt=""></a>
                             </div>
                             <div class="brand-selection">
                                 <h1 class="brand-selection-title">Подборка брендов</h1>
-                                <a href="/brand-collection.html"><img src="assets/img/index/brand-collection-preview-page.png" alt="brand-collection"></a>
+                                <a href="/brand-collection.html"><img src="{%static 'RDM-main/assets/img/index/brand-collection-preview-page.png'%}" alt="brand-collection"></a>
                             </div>
                         </div>
                     </div>
                     <div class="man-slide">
                         <div class="man-content">
                             <div class="man-collection__arrow-slider-left">
-                                <button class="man-slider-left" type="button"><img src="assets/img/index/arrow-slider.png" alt="arrow-left"></button>
+                                <button class="man-slider-left" type="button"><img src="{%static 'RDM-main/assets/img/index/arrow-slider.png'%}" alt="arrow-left"></button>
                             </div>
                             <div class="man-collection">
                                 <p>Мужская</p>
@@ -133,14 +109,14 @@
                                     <div class="slider"></div>
                                 </div>
                                 <div class="man-collection-imgs">
-                                    <a href="/collections.html"><img src="assets/img/index/man-slide-sollection-img.png" alt="collection" class="main-collection__img"></a>
-                                <a href="/collections.html"><img src="assets/img/index/man-slide-sollection-img2.png" alt="collection" class="main-collection__img"></a>
+                                    <a href="/collections.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img.png'%}" alt="collection" class="main-collection__img"></a>
+                                <a href="/collections.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img2.png'%}" alt="collection" class="main-collection__img"></a>
                                 </div>
                             </div>
                             <div class="man-sale">
-                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
                                 <h1 class="man-sale-title">Топ</h1>
                             </div>
                         </div>
@@ -149,7 +125,7 @@
                     <div class="woman-slide">
                         <div class="woman-content">
                             <div class="woman-collection__arrow-slider-left">
-                                <button class="woman-slider-left" type="button"><img src="assets/img/index/arrow-slider.png" alt="arrow-left"></button>
+                                <button class="woman-slider-left" type="button"><img src="{%static 'RDM-main/assets/img/index/arrow-slider.png'%}" alt="arrow-left"></button>
                             </div>
                             <div class="woman-collection">
                                 <p>Мужская</p>
@@ -161,14 +137,14 @@
                                     <div class="slider"></div>
                                 </div>
                                 <div class="woman-collection-imgs">
-                                    <a href="/collections.html"><img src="assets/img/index/man-slide-sollection-img.png" alt="collection" class="main-collection__img"></a>
-                                <a href="/collections.html"><img src="assets/img/index/man-slide-sollection-img2.png" alt="collection" class="main-collection__img"></a>
+                                    <a href="/collections.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img.png'%}" alt="collection" class="main-collection__img"></a>
+                                <a href="/collections.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img2.png'%}" alt="collection" class="main-collection__img"></a>
                                 </div>
                             </div>
                             <div class="woman-sale">
-                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="assets/img/index/man-slide-sale-img.png" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
                                 <h1 class="woman-sale-title">Топ</h1>
                             </div>
                         </div>
@@ -184,17 +160,7 @@
                 </div>
             </main>
             <script src="assets/js/slider.js"></script>
-            <footer class="footer">
-                <nav class="footer-nav">
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-list__item"><a href="#">О нас</a></li>
-                        <li class="footer-nav-list__item"><a href="#">Пользовательское соглашение</a></li>
-                        <li class="footer-nav-list__item"><a href="#">Разместить бренд на сайт</a></li>
-                        <li class="footer-nav-list__item"><a href="#">Поддержка</a></li>
-                    </ul>
-                </nav>
-                <h2 class="footer-left-text">Мода<br>России</h2>
-            </footer>
+          {% include 'inc/_footer.html'%}
         </body>
     </div>
 </html>

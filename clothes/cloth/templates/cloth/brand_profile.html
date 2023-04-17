@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/header-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/footer-style.css'%}">
+    <link rel="stylesheet" href="{%static 'RDM-main/assets/css/brand-profile.css'%}">
+    <title>Профиль бренда</title>
+</head>
+{% include 'inc/_header.html'%}
+<body>
+    <div class="brand-card-and-payment">
+        <div class="brand-card">
+            <div class="brand-card-photo">
+                <img src="{%static 'RDM-main/assets/img/favorite-product-photo-2.png'%}" alt="brand-photo">
+            </div>
+            <div class="brand-card-info">
+                <div class="brand-card-name">
+                    <p>AbibasTo</p>
+                </div>
+                <div class="brand-card-delivery-adress">
+                    <p>Воронцово</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brand-menu">
+        <a href="" class="add-product">
+            <p class="add-product__title title">Добавить товар</p>
+            <p class="add-product__description descr">Пополните свой ассортимент</p>
+        </a>
+        <a href="" class="your-drafts">
+            <p class="your-drafts__title title">Ваши черновики</p>
+            <p class="your-drafts__description descr">Заготовки товаров</p>
+        </a>
+        <a href="" class="edit-profile">
+            <p class="edit-profile__title title">Редактировать профиль</p>
+            <p class="edit-profile__description descr">Настройте профиль бренда</p>
+        </a>
+        <a href="" class="brand-bonus">
+            <p class="brand-bonus__title title">Бонусы бренда</p>
+            <p class="brand-bonus__description descr">Для привлечения клиентов</p>
+        </a>
+    </div>
+</body>
+{% include 'inc/_footer.html'%}
+</html>
