@@ -72,7 +72,7 @@ class ProductCard(ListView):
     template_name = 'cloth/product_card.html'
 
 
-class Search(ListView):
+class Search(DetailView):
     model = Cloth
     context_object_name = 'search'
     template_name = 'cloth/search.html'

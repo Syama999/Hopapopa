@@ -25,35 +25,35 @@
                 <div class="filters-content">
                     <p class="filters-list-title">Стиль</p>
                     <ul class="filters-list">
-                        <li class="filters-list__item"><a href="/index.html">Домашний</a></li>
-                        <li class="filters-list__item"><a href="#">Уличный</a></li>
-                        <li class="filters-list__item"><a href="#">Спортивный</a></li>
-                        <li class="filters-list__item"><a href="#">Деловой</a></li>
-                        <li class="filters-list__item"><a href="#">Праздничный</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Домашний</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Уличный</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Спортивный</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Деловой</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Праздничный</a></li>
                     </ul>
                     <p class="filters-list-title">Тип</p>
                     <ul class="filters-list">
-                        <li class="filters-list__item"><a href="/index.html">Опасный</a></li>
-                        <li class="filters-list__item"><a href="#">Футболка</a></li>
-                        <li class="filters-list__item"><a href="#">Комбинезон</a></li>
-                        <li class="filters-list__item"><a href="#">Дублёнка</a></li>
-                        <li class="filters-list__item"><a href="#">Пончо</a></li>
-                        <li class="filters-list__item"><a href="#">Маскхалат</a></li>
-                        <li class="filters-list__item"><a href="#">Рашгард</a></li>
-                        <li class="filters-list__item"><a href="#">Шорты</a></li>
-                        <li class="filters-list__item"><a href="#">Тайтсы</a></li>
-                        <li class="filters-list__item"><a href="#">Пилотка</a></li>
-                        <li class="filters-list__item"><a href="#">...</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Опасный</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Футболка</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Комбинезон</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Дублёнка</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Пончо</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Маскхалат</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Рашгард</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Шорты</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Тайтсы</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Пилотка</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">...</a></li>
                     </ul>
                     <p class="filters-list-title">Пол</p>
                     <ul class="filters-list">
-                        <li class="filters-list__item"><a href="/index.html">Мужской</a></li>
-                        <li class="filters-list__item"><a href="#">Женский</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Мужской</a></li>
+                        <li class="filters-list__item"><a href="{% url 'search'%}">Женский</a></li>
                     </ul>
                 </div>
                 </button>
             <div class="main-video">
-                <p>Видос</p>
+                <iframe width="760" height="515" src="https://www.youtube.com/embed/vmo_nSVdvJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <main class="main">
                 <div class="slider-line">
@@ -86,11 +86,11 @@
                         <div class="additional-content">
                             <div class="new-look">
                                 <h1 class="new-look-title">Новый взгляд</h1>
-                                <a href="/new-look.html"><img src="{%static 'RDM-main/assets/img/index/new-look-preview-page.png'%}" alt=""></a>
+                                <a href="{% url 'new_look'%}"><img src="{%static 'RDM-main/assets/img/index/new-look-preview-page.png'%}" alt=""></a>
                             </div>
                             <div class="brand-selection">
                                 <h1 class="brand-selection-title">Подборка брендов</h1>
-                                <a href="/brand-collection.html"><img src="{%static 'RDM-main/assets/img/index/brand-collection-preview-page.png'%}" alt="brand-collection"></a>
+                                <a href="{% url 'brand_collection'%}"><img src="{%static 'RDM-main/assets/img/index/brand-collection-preview-page.png'%}" alt="brand-collection"></a>
                             </div>
                         </div>
                     </div>
@@ -109,14 +109,14 @@
                                     <div class="slider"></div>
                                 </div>
                                 <div class="man-collection-imgs">
-                                    <a href="/collections.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img.png'%}" alt="collection" class="main-collection__img"></a>
-                                <a href="/collections.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img2.png'%}" alt="collection" class="main-collection__img"></a>
+                                    <a href="{% url 'collections'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img.png'%}" alt="collection" class="main-collection__img"></a>
+                                <a href="{% url 'collections'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img2.png'%}" alt="collection" class="main-collection__img"></a>
                                 </div>
                             </div>
                             <div class="man-sale">
-                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
                                 <h1 class="man-sale-title">Топ</h1>
                             </div>
                         </div>
@@ -137,14 +137,14 @@
                                     <div class="slider"></div>
                                 </div>
                                 <div class="woman-collection-imgs">
-                                    <a href="/collections.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img.png'%}" alt="collection" class="main-collection__img"></a>
-                                <a href="/collections.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img2.png'%}" alt="collection" class="main-collection__img"></a>
+                                    <a href="{% url 'collections'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img.png'%}" alt="collection" class="main-collection__img"></a>
+                                <a href="{% url 'collections'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-collection-img2.png'%}" alt="collection" class="main-collection__img"></a>
                                 </div>
                             </div>
                             <div class="woman-sale">
-                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
-                                <a href="/sale.html"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
+                                <a href="{% url 'sale'%}"><img src="{%static 'RDM-main/assets/img/index/man-slide-sale-img.png'%}" alt="" class="main-sale-img"></a>
                                 <h1 class="woman-sale-title">Топ</h1>
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                     </div>
                 </div>
             </main>
-            <script src="assets/js/slider.js"></script>
+            <script src="{%static 'RDM-main/assets/js/slider.js'%}"></script>
           {% include 'inc/_footer.html'%}
         </body>
     </div>
